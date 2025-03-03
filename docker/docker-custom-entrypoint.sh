@@ -30,9 +30,9 @@ print_banner() {
 
 # Add custom nodes to the NODE_PATH
 if [ -n "$N8N_CUSTOM_EXTENSIONS" ]; then
-    export N8N_CUSTOM_EXTENSIONS="/opt/n8n-custom-nodes/node_modules:${N8N_CUSTOM_EXTENSIONS}"
+    export N8N_CUSTOM_EXTENSIONS="/opt/n8n-custom-nodes:${N8N_CUSTOM_EXTENSIONS}"
 else
-    export N8N_CUSTOM_EXTENSIONS="/opt/n8n-custom-nodes/node_modules"
+    export N8N_CUSTOM_EXTENSIONS="/opt/n8n-custom-nodes"
 fi
 
 print_banner
